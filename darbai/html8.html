@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML8</title>
+
+    <style>
+        .line{
+            border: 1px solid black;
+            margin: 15px;
+            padding: 5px;
+        }
+        div{
+            padding:0px 0px 15px;
+            margin:0px 0px 0px 10px;
+        }
+        #check{
+            padding: 0px 0px 30px;
+        }
+        #info{
+            margin-top: -15px;
+            margin-left:15px;
+            margin-bottom: 15px;
+            width: 110px;
+            background: white;
+        }
+        #question{
+            margin-top: -15px;
+            margin-bottom: 15px;
+            margin-left:10px;
+            width: 70px;
+            background: white;
+        }
+        .size{
+            display: inline-block;
+            width: 60px;
+        }
+        p{
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="line">
+        <p id="info">Jūsų informacija</p>
+        <div>
+            <label class="size">Vardas:</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label class="size">Pavardė:</label>
+            <input type="text" name="lastName">
+        </div>
+    </div>
+    <div class="line">
+        <p id="question">Klausimai</p>
+        <div>
+            <p>Kaip sužinote apie mus?</p>
+            <select name="info">
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                </select>
+        </div>
+        <div>
+            <p>Ar apsilankysite vėl?</p>
+            <form>
+                <input type="radio" name="answr1" value="Taip">Taip
+                <input type="radio" name="answr2" value="Ne">Ne
+                <input type="radio" name="answr3" value="Galbūt">Galbūt
+            </form>
+        </div>
+        <div>
+            <p>Ką manote apie kursą?</p>
+            <textarea name="message" style="width:550px; height:150px;" placeholder="Rašykite viską ką galvojate"></textarea>
+        </div>
+        <div id="check">
+            <p>Pažymėkite programavimo/žymėjimo kalbas us kuriomis esate susipažinę:</p>
+            <div>
+                <table>
+                    <tr>
+                    <td><input type="checkbox" name="lang1#">C#</td>
+                    <td><input type="checkbox" name="lang2">JAVA</td>
+                    <td><input type="checkbox" name="lang3">PHP</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" name="lang4">HTML</td>
+                    <td><input type="checkbox" name="lang5">CSS</td>
+                    <td><input type="checkbox" name="lang6">JavaScript</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" name="lang7">Python</td>
+                    <td><input type="checkbox" name="lang8">Ruby</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Siūsti">
+        </div>
+
+    </div>
+</body>
+
+</html>
