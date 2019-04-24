@@ -1,0 +1,21 @@
+h1 {
+    color: hotpink;
+    font-size: 40px;
+}
+
+#first {
+    display: inline-block;
+    width: 550px;
+}
+
+h2 {
+    color: hotpink;
+    font-size: 30px;
+}
+
+
+#second {
+    color: darkkhaki;
+    display: inline-block;
+    width: 450px;
+}
