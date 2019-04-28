@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS8</title>
+    
+    <style>
+        .firstBlock {
+            background-color: #fff199;
+            padding: 20px;
+            margin-bottom: 5px;
+        }
+        p {
+            width: 100%;
+            word-wrap: break-word;
+        }
+        .secondBlock {
+            background-color:#aaffaf;
+            padding: 20px; 
+        }
+        #name, #lastName, #email {
+            padding: 10px;
+        }
+        .inputFlex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 70%;
+        }
+        input {
+            display: flex;
+            width: 60%;
+            height: 25px;
+            border-radius: 5px;
+        }
+        #regBtn {
+            display: flex;
+            justify-content:center;
+            height: 30px;
+            width: 70%;
+            margin-top: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th {
+            background-color: lightgray;
+            padding: 10px;
+        }
+        table td {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: #aaffaf;
+        }
+        table tr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Registracija į renginį</h1>
+        <div class="firstBlock">
+            <form>
+                <h2>Registracijos forma</h2>
+                <p>Jeigu norite užsiregistruoti į renginį užpildykite žemiau esančia formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius</p>
+                <div class="inputFlex">
+                    <label id="name">Vardas</label>
+                    <input type="text" id="nameInput">
+                </div>
+                <div class="inputFlex">
+                    <label id="lastName">Pavardė</label>
+                    <input type="text" id="lastNameInput">
+                </div>
+                <div class="inputFlex">
+                    <label id="email">Elektroninis paštas</label>
+                    <input type="text" id="emailInput">
+                </div>
+                <div>
+                    <input type="button" id="regBtn" value="Registruoti">
+                </div>
+            </form>
+        </div>
+        <div class="secondBlock">
+            <h2>Jau užsiregistravę dalyviai:</h2>
+            <div>
+                <table>
+                    <tr>
+                        <th  style="width: 60%;">Vardas</th>
+                        <th>Pavardė</th>
+                        <th>Elektroninis paštas</th>
+                    </tr>
+                    <tr>
+                        <td>Jonas</td>
+                        <td>Jonaitis</td>
+                        <td>jonaitis@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Petras</td>
+                        <td>Petraitis</td>
+                        <td>petraitis@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+    
+</html>
