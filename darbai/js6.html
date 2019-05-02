@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS6</title>
+</head>
+
+<body>
+    
+    <main>
+        <div class="main">
+            <p>Įrašykite savo amžių:</p>
+            <div>
+                <form onsubmit="return check();">
+                    <input  id="age" type="text" value="Įveskite amžių" pattern="\d*">
+                    <input type="submit" value="Pavirtinti">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        function check() {
+        
+        var inputAge = document.getElementById("age").value;
+            
+            if (inputAge >= 18) {
+                alert('Galite užeiti į svetainę');
+            } else {
+                alert('Į svetainę užeiti negalite');
+            }
+        }
+    </script>
+    
+</body>
+    
+</html>
