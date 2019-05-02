@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <button onclick=alert(divide())>Dalinti</button>
+    <button onclick="divide();">Dalinti</button>
     
         
     <script>
@@ -16,10 +16,12 @@
         var n2 = 5;
         
         function divide () {
-            return n1 / n2;
+            var final = n1 / n2;
+            console.log(final);
+            alert(final);
+            
         }
-            console.log(divide());
-
+           
         
     </script>
 </body>
