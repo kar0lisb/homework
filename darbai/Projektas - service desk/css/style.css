@@ -1,0 +1,67 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    }
+.main {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(247, 248, 249, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+}
+h1 {
+    color: black;
+}
+.idInput, .pwInput {
+    display:grid;
+    text-align: center;
+}
+#idField, #pwField {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #eff4f9;
+    margin: 10px;
+}
+.hoverText {
+  position: relative;
+  display:inline-block;
+    text-align: right;
+}
+.hoverText .hover {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.hoverText:hover .hover {
+  visibility: visible;
+    
+}
+.logIn {
+    background-color: #26bf26;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.logIn:hover {
+    transform: scale(1.2);
+}
+
