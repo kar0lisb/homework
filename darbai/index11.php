@@ -12,7 +12,7 @@ $cities2 = [
     'Vasingtonas'=>0.6,
     'Maskva'=>11.5,
 ];
-$cities2[] = ['Londonas'=>8.6];
+$cities2['Londonas'] = [8.6];
 
 print_r($cities2);
 ?>
