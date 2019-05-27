@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    }
+/*Prisijungimo lango formatavimas START*/
+.main {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(247, 248, 249, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+}
+h1 {
+    color: black;
+}
+.idInput, .pwInput {
+    display:grid;
+    text-align: center;
+}
+#idField, #pwField {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #eff4f9;
+    margin: 10px;
+}
+.showPassword {
+    text-align: center;
+}
+.logIn {
+    background-color: #26bf26;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.logIn:hover {
+    transform: scale(1.2);
+}
+/*Prisijungimo lango formatavimas END*/
+
+/*MENU formatavimas START-----------------------------------------------------------------------------------*/   
+.menu {
+  overflow: hidden;
+  background-color: #35373d;
+    margin-bottom: 20px;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu .icon {
+  display: none;
+}
+.menuButton, .logOut {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.menuButton:before, .logOut:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #5ca1e1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.menuButton:hover:before, .menuButton:focus:before, .menuButton:active:before, .logOut:hover:before, .logOut:focus:before, .logOut:active:before {
+  left: 0;
+  right: 0;
+}
+.menuButton:hover, .logOut:hover {
+    color:#5ca1e1;
+}
+.logOut {
+    text-align: right;
+    float: right;
+    background: none;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-size: 600;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+/*Meniu formatavimas END*/
+/*Formos formatavimas START-----------------------------------------------------*/
+.issueForm {
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 20px; 
+    font-weight: 600;
+    padding: 10px;
+    background: rgba(247, 248, 249, 0.5);
+    text-align: center;    
+}
+select {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+textarea {
+    width: 80%;
+    font-size:15px;
+    border-radius: 10px;
+    padding:10px;
+}
+.phoneNumberInput {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0;
+}
+.formSubmitButton, .submit_busena {
+    font-size:20px;
+    color: white;
+    border-radius: 15px;
+    border: 0;
+    margin-top:20px;
+    padding: 15px;
+    background-color: #26bf26;
+    cursor: pointer;
+}
+.formSubmitButton:hover, .submit_busena:hover {
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);
+  100% { transform: scale(1); }
+  }
+}
+/*Formos formatavimas END------------------------------------*/
+/*Gedimų puslapio formatavimas START-------------------------*/
+table {  
+	border-collapse: collapse; 
+	margin: auto;
+    background-color: white;
+	}
+
+/* Zebra striping */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th { 
+	background: #5ca1e1; 
+	color: white; 
+	font-weight: bold;
+    cursor: pointer;
+	}
+
+td, th { 
+	padding: 10px;  
+	text-align: left; 
+	font-size: 18px;
+	}
+.gedimuLangas {
+    text-align: center;
+}
+
+/*instrukcijos-----------------------------------------------*/
+
+.flex-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+.flex-image .tooltip {
+
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.5;
+    background-color: white;
+    margin: 10px;
+
+}
+.flex-image .tooltip:hover {
+  opacity: 1;
+    cursor:pointer;
+
+}
+.tooltip  img {
+   height: 200px;
+  width: auto;
+    border-radius: 20px;
+}
+.tooltip {
+    font-weight: 600;
+}
+/*issokantis instrukcijos langas--------------------------------*/
+    .modal, .modal1, .modal2, .modal3 {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* lango turinys */
+    .modal-content, .modal-content1, .modal-content2, .modal-content3 {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* uždarymo mygtukas */
+    .close, .close1, .close2, .close3 {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover, .close1:hover, .close2:hover, .close3:hover {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+/*------------------Jeigu ekranas mažesnis nei 768---------------------*/
+@media only screen and (max-width: 768px) {
+.flex-image .tooltip {
+    opacity: 1;
+}
+.issueForm {
+     width: auto;
+}
+/*    ----------------------------menu START-----------------------------*/
+    .menu a:not(:first-child) {display: none;}
+    .menu button:first-child {display:none;}
+    .logOut {
+        float: left;
+    }
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+  .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+   .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .menu.responsive button {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+/*    menu END-------------------------------------------------------------------*/
+/*    lentelė START---------*/
+    table { 
+	  	width: 100%; 
+	}
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		content: attr(data-column);
+		color: #000;
+		font-weight: bold;
+	}
+/*lentele END----------*/
+}
